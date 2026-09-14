@@ -1,0 +1,154 @@
+2026-05-15 10:28:55,795 - INFO - === Model Parameters ===
+2026-05-15 10:28:55,796 - INFO -   dataname: t2m
+2026-05-15 10:28:55,796 - INFO -   fps: [20]
+2026-05-15 10:28:55,797 - INFO -   seq_len: 64
+2026-05-15 10:28:55,797 - INFO -   total_iter: 300000
+2026-05-15 10:28:55,797 - INFO -   warm_up_iter: 1000
+2026-05-15 10:28:55,798 - INFO -   lr: 0.0002
+2026-05-15 10:28:55,798 - INFO -   lr_scheduler: [150000]
+2026-05-15 10:28:55,798 - INFO -   gamma: 0.5
+2026-05-15 10:28:55,799 - INFO -   code_dim: 32
+2026-05-15 10:28:55,799 - INFO -   nb_code: 8192
+2026-05-15 10:28:55,799 - INFO -   mu: 0.99
+2026-05-15 10:28:55,800 - INFO -   down_t: 2
+2026-05-15 10:28:55,800 - INFO -   stride_t: 2
+2026-05-15 10:28:55,800 - INFO -   width: 512
+2026-05-15 10:28:55,800 - INFO -   depth: 3
+2026-05-15 10:28:55,801 - INFO -   dilation_growth_rate: 3
+2026-05-15 10:28:55,801 - INFO -   output_emb_width: 512
+2026-05-15 10:28:55,801 - INFO -   vq_act: relu
+2026-05-15 10:28:55,802 - INFO -   block_size: 51
+2026-05-15 10:28:55,802 - INFO -   embed_dim_gpt: 1024
+2026-05-15 10:28:55,803 - INFO -   clip_dim: 512
+2026-05-15 10:28:55,803 - INFO -   num_layers: 9
+2026-05-15 10:28:55,803 - INFO -   num_local_layer: 2
+2026-05-15 10:28:55,804 - INFO -   n_head_gpt: 16
+2026-05-15 10:28:55,804 - INFO -   ff_rate: 4
+2026-05-15 10:28:55,804 - INFO -   drop_out_rate: 0.1
+2026-05-15 10:28:55,805 - INFO -   quantizer: ema_reset
+2026-05-15 10:28:55,805 - INFO -   quantbeta: 1.0
+2026-05-15 10:28:55,805 - INFO -   resume_pth: output/vq/2024-06-03-20-22-07_retrain/net_last.pth
+2026-05-15 10:28:55,806 - INFO -   resume_trans: output/t2m/2024-06-04-09-29-20_trans_name_b128/net_last.pth
+2026-05-15 10:28:55,806 - INFO -   out_dir: output
+2026-05-15 10:28:55,806 - INFO -   exp_name: exp_debug
+2026-05-15 10:28:55,806 - INFO -   vq_name: VQVAE
+2026-05-15 10:28:55,807 - INFO -   print_iter: 200
+2026-05-15 10:28:55,807 - INFO -   eval_iter: 10000
+2026-05-15 10:28:55,807 - INFO -   if_maxtest: False
+2026-05-15 10:28:55,808 - INFO -   text: None
+2026-05-15 10:28:55,808 - INFO -   length: None
+2026-05-15 10:28:55,808 - INFO -   weight_decay: 1e-05
+2026-05-15 10:28:55,808 - INFO -   decay_option: all
+2026-05-15 10:28:55,809 - INFO -   optimizer: adamw
+2026-05-15 10:28:55,809 - INFO -   motion_generation_method: from_scratch
+2026-05-15 10:28:55,809 - INFO -   seed: 42
+2026-05-15 10:28:55,810 - INFO -   batch_size: 512
+2026-05-15 10:28:55,811 - INFO -   clip_loss_type: cosine
+2026-05-15 10:28:55,811 - INFO -   clip_loss: True
+2026-05-15 10:28:55,811 - INFO -   test_avg: False
+2026-05-15 10:28:55,812 - INFO -   motion_clip_weight: 1.0
+2026-05-15 10:28:55,812 - INFO -   text_clip_weight: 0.0
+2026-05-15 10:28:55,812 - INFO -   teacher: 0.5
+2026-05-15 10:28:55,812 - INFO -   clip_temp: 0.07
+2026-05-15 10:28:55,813 - INFO -   teacher_temp: 3.0
+2026-05-15 10:28:55,813 - INFO -   eeg_ch: all
+2026-05-15 10:28:55,813 - INFO -   eeg_data_root: ['EEG_data/20260508S5']
+2026-05-15 10:28:55,814 - INFO -   eeg_data_name: _final.mat
+2026-05-15 10:28:55,814 - INFO -   motion_pool_size: 100
+2026-05-15 10:28:55,815 - INFO -   cls_head: True
+2026-05-15 10:28:55,815 - INFO -   CFG: True
+2026-05-15 10:28:55,815 - INFO -   CFG_prob: 0.1
+2026-05-15 10:28:55,815 - INFO -   CFG_weight: 2.0
+2026-05-15 10:28:55,816 - INFO -   val_per_epoch: 50
+2026-05-15 10:28:55,816 - INFO -   pkeep: 0.5
+2026-05-15 10:28:55,816 - INFO -   mask_prob: 0.5
+2026-05-15 10:28:55,816 - INFO -   random_level: False
+2026-05-15 10:28:55,817 - INFO -   eeg_embed_dim: 256
+2026-05-15 10:28:55,817 - INFO -   eeg_num_local_layer: 2
+2026-05-15 10:28:55,817 - INFO -   eeg_drop_out_rate: 0.1
+2026-05-15 10:28:55,818 - INFO -   eeg_ff_rate: 4
+2026-05-15 10:28:55,818 - INFO -   eeg_num_layers: 2
+2026-05-15 10:28:55,818 - INFO -   eeg_n_head: 4
+2026-05-15 10:28:55,818 - INFO -   eeg_iter: 3000
+2026-05-15 10:28:55,819 - INFO -   eeg_milestones: [8000]
+2026-05-15 10:28:55,819 - INFO -   dataset_name: t2m
+2026-05-15 10:28:55,819 - INFO -   vq_dir: ./output/vq/VQVAE
+2026-05-15 10:28:55,819 - INFO - ========================
+2026-05-15 10:29:14,770 - INFO - new best top3: 0.090625
+2026-05-15 10:29:14,782 - INFO - Epoch: 50 - Clip loss: 6.234055 - MTop1: 0.021875 - MTop2: 0.056250 - MTop3: 0.090625
+2026-05-15 10:29:34,581 - INFO - Epoch: 100 - Clip loss: 6.001460 - MTop1: 0.015625 - MTop2: 0.050000 - MTop3: 0.081250
+2026-05-15 10:29:53,974 - INFO - Epoch: 150 - Clip loss: 5.848831 - MTop1: 0.034375 - MTop2: 0.053125 - MTop3: 0.084375
+2026-05-15 10:30:12,494 - INFO - new best top3: 0.096875
+2026-05-15 10:30:12,506 - INFO - Epoch: 200 - Clip loss: 5.630533 - MTop1: 0.018750 - MTop2: 0.053125 - MTop3: 0.096875
+2026-05-15 10:30:32,256 - INFO - new best top3: 0.115625
+2026-05-15 10:30:32,268 - INFO - Epoch: 250 - Clip loss: 5.487404 - MTop1: 0.015625 - MTop2: 0.053125 - MTop3: 0.115625
+2026-05-15 10:30:51,880 - INFO - Epoch: 300 - Clip loss: 5.335085 - MTop1: 0.006250 - MTop2: 0.031250 - MTop3: 0.068750
+2026-05-15 10:31:11,350 - INFO - Epoch: 350 - Clip loss: 5.186436 - MTop1: 0.015625 - MTop2: 0.040625 - MTop3: 0.075000
+2026-05-15 10:31:31,159 - INFO - Epoch: 400 - Clip loss: 4.971506 - MTop1: 0.025000 - MTop2: 0.040625 - MTop3: 0.068750
+2026-05-15 10:31:51,044 - INFO - Epoch: 450 - Clip loss: 4.805902 - MTop1: 0.012500 - MTop2: 0.043750 - MTop3: 0.071875
+2026-05-15 10:32:09,305 - INFO - Epoch: 500 - Clip loss: 4.672916 - MTop1: 0.015625 - MTop2: 0.028125 - MTop3: 0.053125
+2026-05-15 10:32:28,759 - INFO - Epoch: 550 - Clip loss: 4.573330 - MTop1: 0.025000 - MTop2: 0.062500 - MTop3: 0.106250
+2026-05-15 10:32:48,540 - INFO - Epoch: 600 - Clip loss: 4.489884 - MTop1: 0.015625 - MTop2: 0.053125 - MTop3: 0.075000
+2026-05-15 10:33:07,700 - INFO - Epoch: 650 - Clip loss: 4.359603 - MTop1: 0.018750 - MTop2: 0.043750 - MTop3: 0.068750
+2026-05-15 10:33:26,988 - INFO - Epoch: 700 - Clip loss: 4.251505 - MTop1: 0.006250 - MTop2: 0.043750 - MTop3: 0.081250
+2026-05-15 10:33:47,069 - INFO - Epoch: 750 - Clip loss: 4.138948 - MTop1: 0.006250 - MTop2: 0.046875 - MTop3: 0.096875
+2026-05-15 10:34:06,147 - INFO - Epoch: 800 - Clip loss: 4.111790 - MTop1: 0.037500 - MTop2: 0.078125 - MTop3: 0.103125
+2026-05-15 10:34:26,025 - INFO - new best top3: 0.121875
+2026-05-15 10:34:26,038 - INFO - Epoch: 850 - Clip loss: 4.091684 - MTop1: 0.018750 - MTop2: 0.071875 - MTop3: 0.121875
+2026-05-15 10:34:46,121 - INFO - Epoch: 900 - Clip loss: 4.131929 - MTop1: 0.018750 - MTop2: 0.056250 - MTop3: 0.078125
+2026-05-15 10:35:05,169 - INFO - Epoch: 950 - Clip loss: 3.978201 - MTop1: 0.034375 - MTop2: 0.053125 - MTop3: 0.106250
+2026-05-15 10:35:25,115 - INFO - Epoch: 1000 - Clip loss: 3.891773 - MTop1: 0.028125 - MTop2: 0.068750 - MTop3: 0.093750
+2026-05-15 10:35:44,201 - INFO - Epoch: 1050 - Clip loss: 3.948938 - MTop1: 0.025000 - MTop2: 0.059375 - MTop3: 0.090625
+2026-05-15 10:36:03,196 - INFO - Epoch: 1100 - Clip loss: 3.853693 - MTop1: 0.018750 - MTop2: 0.043750 - MTop3: 0.081250
+2026-05-15 10:36:22,825 - INFO - Epoch: 1150 - Clip loss: 3.813040 - MTop1: 0.012500 - MTop2: 0.050000 - MTop3: 0.075000
+2026-05-15 10:36:42,777 - INFO - Epoch: 1200 - Clip loss: 3.822953 - MTop1: 0.040625 - MTop2: 0.071875 - MTop3: 0.100000
+2026-05-15 10:37:01,939 - INFO - Epoch: 1250 - Clip loss: 3.801595 - MTop1: 0.015625 - MTop2: 0.053125 - MTop3: 0.081250
+2026-05-15 10:37:21,891 - INFO - Epoch: 1300 - Clip loss: 3.835207 - MTop1: 0.021875 - MTop2: 0.059375 - MTop3: 0.100000
+2026-05-15 10:37:42,014 - INFO - Epoch: 1350 - Clip loss: 3.761723 - MTop1: 0.040625 - MTop2: 0.065625 - MTop3: 0.115625
+2026-05-15 10:38:00,544 - INFO - Epoch: 1400 - Clip loss: 3.752483 - MTop1: 0.021875 - MTop2: 0.059375 - MTop3: 0.087500
+2026-05-15 10:38:19,982 - INFO - Epoch: 1450 - Clip loss: 3.699454 - MTop1: 0.028125 - MTop2: 0.062500 - MTop3: 0.096875
+2026-05-15 10:38:39,830 - INFO - Epoch: 1500 - Clip loss: 3.633614 - MTop1: 0.031250 - MTop2: 0.059375 - MTop3: 0.090625
+2026-05-15 10:38:59,018 - INFO - Epoch: 1550 - Clip loss: 3.687982 - MTop1: 0.028125 - MTop2: 0.053125 - MTop3: 0.075000
+2026-05-15 10:39:18,722 - INFO - new best top3: 0.128125
+2026-05-15 10:39:18,734 - INFO - Epoch: 1600 - Clip loss: 3.638472 - MTop1: 0.043750 - MTop2: 0.084375 - MTop3: 0.128125
+2026-05-15 10:39:38,210 - INFO - Epoch: 1650 - Clip loss: 3.676439 - MTop1: 0.018750 - MTop2: 0.050000 - MTop3: 0.075000
+2026-05-15 10:39:56,582 - INFO - Epoch: 1700 - Clip loss: 3.618491 - MTop1: 0.009375 - MTop2: 0.021875 - MTop3: 0.059375
+2026-05-15 10:40:16,306 - INFO - Epoch: 1750 - Clip loss: 3.604981 - MTop1: 0.018750 - MTop2: 0.056250 - MTop3: 0.096875
+2026-05-15 10:40:36,301 - INFO - Epoch: 1800 - Clip loss: 3.602801 - MTop1: 0.025000 - MTop2: 0.053125 - MTop3: 0.084375
+2026-05-15 10:40:55,188 - INFO - Epoch: 1850 - Clip loss: 3.593130 - MTop1: 0.028125 - MTop2: 0.056250 - MTop3: 0.090625
+2026-05-15 10:41:15,004 - INFO - Epoch: 1900 - Clip loss: 3.537393 - MTop1: 0.025000 - MTop2: 0.065625 - MTop3: 0.103125
+2026-05-15 10:41:34,823 - INFO - Epoch: 1950 - Clip loss: 3.565870 - MTop1: 0.025000 - MTop2: 0.040625 - MTop3: 0.078125
+2026-05-15 10:41:53,725 - INFO - Epoch: 2000 - Clip loss: 3.586355 - MTop1: 0.003125 - MTop2: 0.050000 - MTop3: 0.081250
+2026-05-15 10:42:13,372 - INFO - Epoch: 2050 - Clip loss: 3.531135 - MTop1: 0.028125 - MTop2: 0.075000 - MTop3: 0.100000
+2026-05-15 10:42:32,871 - INFO - Epoch: 2100 - Clip loss: 3.495424 - MTop1: 0.018750 - MTop2: 0.050000 - MTop3: 0.087500
+2026-05-15 10:42:51,729 - INFO - Epoch: 2150 - Clip loss: 3.546844 - MTop1: 0.015625 - MTop2: 0.053125 - MTop3: 0.096875
+2026-05-15 10:43:11,337 - INFO - Epoch: 2200 - Clip loss: 3.504737 - MTop1: 0.015625 - MTop2: 0.043750 - MTop3: 0.090625
+2026-05-15 10:43:31,028 - INFO - Epoch: 2250 - Clip loss: 3.511546 - MTop1: 0.025000 - MTop2: 0.062500 - MTop3: 0.115625
+2026-05-15 10:43:49,964 - INFO - Epoch: 2300 - Clip loss: 3.525515 - MTop1: 0.003125 - MTop2: 0.037500 - MTop3: 0.100000
+2026-05-15 10:44:09,476 - INFO - Epoch: 2350 - Clip loss: 3.520004 - MTop1: 0.021875 - MTop2: 0.037500 - MTop3: 0.078125
+2026-05-15 10:44:28,963 - INFO - Epoch: 2400 - Clip loss: 3.515786 - MTop1: 0.021875 - MTop2: 0.053125 - MTop3: 0.109375
+2026-05-15 10:44:47,533 - INFO - Epoch: 2450 - Clip loss: 3.456564 - MTop1: 0.006250 - MTop2: 0.031250 - MTop3: 0.075000
+2026-05-15 10:45:06,829 - INFO - Epoch: 2500 - Clip loss: 3.527769 - MTop1: 0.021875 - MTop2: 0.059375 - MTop3: 0.087500
+2026-05-15 10:45:25,745 - INFO - Epoch: 2550 - Clip loss: 3.500729 - MTop1: 0.021875 - MTop2: 0.059375 - MTop3: 0.106250
+2026-05-15 10:45:44,680 - INFO - Epoch: 2600 - Clip loss: 3.495584 - MTop1: 0.015625 - MTop2: 0.031250 - MTop3: 0.062500
+2026-05-15 10:46:03,758 - INFO - Epoch: 2650 - Clip loss: 3.464025 - MTop1: 0.012500 - MTop2: 0.046875 - MTop3: 0.084375
+2026-05-15 10:46:23,185 - INFO - Epoch: 2700 - Clip loss: 3.404860 - MTop1: 0.012500 - MTop2: 0.040625 - MTop3: 0.087500
+2026-05-15 10:46:41,821 - INFO - Epoch: 2750 - Clip loss: 3.450698 - MTop1: 0.015625 - MTop2: 0.043750 - MTop3: 0.078125
+2026-05-15 10:47:01,386 - INFO - Epoch: 2800 - Clip loss: 3.437192 - MTop1: 0.006250 - MTop2: 0.046875 - MTop3: 0.075000
+2026-05-15 10:47:20,671 - INFO - Epoch: 2850 - Clip loss: 3.448672 - MTop1: 0.015625 - MTop2: 0.046875 - MTop3: 0.081250
+2026-05-15 10:47:39,262 - INFO - Epoch: 2900 - Clip loss: 3.370111 - MTop1: 0.021875 - MTop2: 0.053125 - MTop3: 0.103125
+2026-05-15 10:47:58,540 - INFO - Epoch: 2950 - Clip loss: 3.442953 - MTop1: 0.025000 - MTop2: 0.043750 - MTop3: 0.087500
+2026-05-15 10:48:18,300 - INFO - Epoch: 3000 - Clip loss: 3.452123 - MTop1: 0.028125 - MTop2: 0.046875 - MTop3: 0.071875
+2026-05-15 10:48:32,469 - INFO - ==============================
+2026-05-15 10:48:32,470 - INFO -   FINAL STATISTICAL REPORT (Mean ± SD)  
+2026-05-15 10:48:32,470 - INFO - ==============================
+2026-05-15 10:48:32,473 - INFO - 
+[Task: M_R] Comparison with Shuffle:
+2026-05-15 10:48:32,474 - INFO -   Top-1: Real(0.0320 ± 0.0072) vs Shuffle(0.0346 ± 0.0106) | p-val: 4.19e-01 
+2026-05-15 10:48:32,474 - INFO -   Top-2: Real(0.0677 ± 0.0129) vs Shuffle(0.0664 ± 0.0156) | p-val: 7.66e-01 
+2026-05-15 10:48:32,474 - INFO -   Top-3: Real(0.1000 ± 0.0150) vs Shuffle(0.0953 ± 0.0202) | p-val: 3.97e-01 
+2026-05-15 10:48:32,476 - INFO - 
+[Task: M_R] Comparison with Noise:
+2026-05-15 10:48:32,476 - INFO -   Top-1: Real(0.0320 ± 0.0072) vs Noise(0.0307 ± 0.0064) | p-val: 4.80e-01 
+2026-05-15 10:48:32,476 - INFO -   Top-2: Real(0.0677 ± 0.0129) vs Noise(0.0656 ± 0.0154) | p-val: 6.59e-01 
+2026-05-15 10:48:32,477 - INFO -   Top-3: Real(0.1000 ± 0.0150) vs Noise(0.0974 ± 0.0180) | p-val: 6.15e-01 

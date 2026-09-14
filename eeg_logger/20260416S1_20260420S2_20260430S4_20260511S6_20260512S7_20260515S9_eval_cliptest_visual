@@ -1,0 +1,87 @@
+2026-06-12 22:22:26,426 - INFO - === Model Parameters ===
+2026-06-12 22:22:26,426 - INFO -   dataname: t2m
+2026-06-12 22:22:26,427 - INFO -   fps: [20]
+2026-06-12 22:22:26,427 - INFO -   seq_len: 64
+2026-06-12 22:22:26,427 - INFO -   total_iter: 300000
+2026-06-12 22:22:26,428 - INFO -   warm_up_iter: 1000
+2026-06-12 22:22:26,428 - INFO -   lr: 0.0002
+2026-06-12 22:22:26,428 - INFO -   lr_scheduler: [150000]
+2026-06-12 22:22:26,429 - INFO -   gamma: 0.5
+2026-06-12 22:22:26,429 - INFO -   code_dim: 32
+2026-06-12 22:22:26,429 - INFO -   nb_code: 8192
+2026-06-12 22:22:26,430 - INFO -   mu: 0.99
+2026-06-12 22:22:26,430 - INFO -   down_t: 2
+2026-06-12 22:22:26,430 - INFO -   stride_t: 2
+2026-06-12 22:22:26,430 - INFO -   width: 512
+2026-06-12 22:22:26,431 - INFO -   depth: 3
+2026-06-12 22:22:26,431 - INFO -   dilation_growth_rate: 3
+2026-06-12 22:22:26,431 - INFO -   output_emb_width: 512
+2026-06-12 22:22:26,431 - INFO -   vq_act: relu
+2026-06-12 22:22:26,432 - INFO -   block_size: 51
+2026-06-12 22:22:26,432 - INFO -   embed_dim_gpt: 1024
+2026-06-12 22:22:26,432 - INFO -   clip_dim: 512
+2026-06-12 22:22:26,433 - INFO -   num_layers: 9
+2026-06-12 22:22:26,433 - INFO -   num_local_layer: 2
+2026-06-12 22:22:26,433 - INFO -   n_head_gpt: 16
+2026-06-12 22:22:26,433 - INFO -   ff_rate: 4
+2026-06-12 22:22:26,434 - INFO -   drop_out_rate: 0.1
+2026-06-12 22:22:26,434 - INFO -   quantizer: ema_reset
+2026-06-12 22:22:26,434 - INFO -   quantbeta: 1.0
+2026-06-12 22:22:26,436 - INFO -   resume_pth: output/vq/2024-06-03-20-22-07_retrain/net_last.pth
+2026-06-12 22:22:26,436 - INFO -   resume_trans: output/t2m/2024-06-04-09-29-20_trans_name_b128/net_last.pth
+2026-06-12 22:22:26,437 - INFO -   out_dir: output
+2026-06-12 22:22:26,437 - INFO -   exp_name: exp_debug
+2026-06-12 22:22:26,437 - INFO -   vq_name: VQVAE
+2026-06-12 22:22:26,437 - INFO -   print_iter: 200
+2026-06-12 22:22:26,438 - INFO -   eval_iter: 10000
+2026-06-12 22:22:26,438 - INFO -   if_maxtest: False
+2026-06-12 22:22:26,438 - INFO -   text: None
+2026-06-12 22:22:26,439 - INFO -   length: None
+2026-06-12 22:22:26,439 - INFO -   weight_decay: 1e-05
+2026-06-12 22:22:26,449 - INFO -   decay_option: all
+2026-06-12 22:22:26,449 - INFO -   optimizer: adamw
+2026-06-12 22:22:26,450 - INFO -   motion_generation_method: from_scratch
+2026-06-12 22:22:26,450 - INFO -   seed: 42
+2026-06-12 22:22:26,450 - INFO -   batch_size: 512
+2026-06-12 22:22:26,451 - INFO -   clip_loss_type: cosine
+2026-06-12 22:22:26,451 - INFO -   clip_target: motion_t2m
+2026-06-12 22:22:26,451 - INFO -   clip_loss: True
+2026-06-12 22:22:26,451 - INFO -   test_avg: False
+2026-06-12 22:22:26,452 - INFO -   clip_weight: 1.0
+2026-06-12 22:22:26,452 - INFO -   pose_clip_weight: 0.0
+2026-06-12 22:22:26,452 - INFO -   teacher: 0.0
+2026-06-12 22:22:26,453 - INFO -   clip_temp: 0.07
+2026-06-12 22:22:26,453 - INFO -   teacher_temp: 3.0
+2026-06-12 22:22:26,453 - INFO -   eeg_ch: only_visual
+2026-06-12 22:22:26,453 - INFO -   eeg_data_root: ['EEG_data/20260416S1', 'EEG_data/20260420S2', 'EEG_data/20260430S4', 'EEG_data/20260511S6', 'EEG_data/20260512S7', 'EEG_data/20260515S9']
+2026-06-12 22:22:26,454 - INFO -   eeg_data_name: _final.mat
+2026-06-12 22:22:26,454 - INFO -   motion_pool_size: 100
+2026-06-12 22:22:26,454 - INFO -   cls_head: True
+2026-06-12 22:22:26,454 - INFO -   val_per_epoch: 50
+2026-06-12 22:22:26,455 - INFO -   pkeep: 0.5
+2026-06-12 22:22:26,455 - INFO -   mask_prob: 0.5
+2026-06-12 22:22:26,455 - INFO -   random_level: False
+2026-06-12 22:22:26,456 - INFO -   eeg_embed_dim: 256
+2026-06-12 22:22:26,456 - INFO -   eeg_num_local_layer: 2
+2026-06-12 22:22:26,456 - INFO -   eeg_drop_out_rate: 0.1
+2026-06-12 22:22:26,456 - INFO -   eeg_ff_rate: 4
+2026-06-12 22:22:26,457 - INFO -   eeg_num_layers: 2
+2026-06-12 22:22:26,457 - INFO -   eeg_n_head: 4
+2026-06-12 22:22:26,457 - INFO -   eeg_iter: 10000
+2026-06-12 22:22:26,466 - INFO -   eeg_milestones: [8000]
+2026-06-12 22:22:26,466 - INFO -   dataset_name: t2m
+2026-06-12 22:22:26,466 - INFO -   vq_dir: ./output/vq/VQVAE
+2026-06-12 22:22:26,467 - INFO - ========================
+2026-06-12 22:22:42,297 - INFO - ==================================================
+2026-06-12 22:22:42,299 - INFO - STATISTICAL EVALUATION OVER 20 RUNS
+2026-06-12 22:22:42,299 - INFO - ==================================================
+2026-06-12 22:22:42,300 - INFO - 
+>>> Comparing Real vs SHUF
+2026-06-12 22:22:42,303 - INFO - T_R_Precision[Top-1]: Real 0.0439±0.0034 vs 0.0336±0.0029 | p=4.51e-04 ***
+2026-06-12 22:22:42,303 - INFO - T_R_Precision[Top-2]: Real 0.0859±0.0048 vs 0.0658±0.0049 | p=4.06e-06 ***
+2026-06-12 22:22:42,304 - INFO - T_R_Precision[Top-3]: Real 0.1257±0.0065 vs 0.0953±0.0048 | p=2.24e-07 ***
+2026-06-12 22:22:42,304 - INFO - 
+>>> Comparing Real vs NOISE
+2026-06-12 22:22:42,306 - INFO - T_R_Precision[Top-1]: Real 0.0439±0.0034 vs 0.0315±0.0026 | p=5.30e-06 ***
+2026-06-12 22:22:42,306 - INFO - T_R_Precision[Top-2]: Real 0.0859±0.0048 vs 0.0634±0.0042 | p=3.34e-07 ***
+2026-06-12 22:22:42,307 - INFO - T_R_Precision[Top-3]: Real 0.1257±0.0065 vs 0.0938±0.0047 | p=7.89e-08 ***

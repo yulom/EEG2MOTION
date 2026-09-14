@@ -1,0 +1,98 @@
+2026-06-11 21:43:02,326 - INFO - === Model Parameters ===
+2026-06-11 21:43:02,327 - INFO -   dataname: t2m
+2026-06-11 21:43:02,327 - INFO -   fps: [20]
+2026-06-11 21:43:02,328 - INFO -   seq_len: 64
+2026-06-11 21:43:02,328 - INFO -   total_iter: 300000
+2026-06-11 21:43:02,328 - INFO -   warm_up_iter: 1000
+2026-06-11 21:43:02,329 - INFO -   lr: 0.0002
+2026-06-11 21:43:02,329 - INFO -   lr_scheduler: [150000]
+2026-06-11 21:43:02,329 - INFO -   gamma: 0.5
+2026-06-11 21:43:02,330 - INFO -   code_dim: 32
+2026-06-11 21:43:02,330 - INFO -   nb_code: 8192
+2026-06-11 21:43:02,330 - INFO -   mu: 0.99
+2026-06-11 21:43:02,331 - INFO -   down_t: 2
+2026-06-11 21:43:02,331 - INFO -   stride_t: 2
+2026-06-11 21:43:02,331 - INFO -   width: 512
+2026-06-11 21:43:02,331 - INFO -   depth: 3
+2026-06-11 21:43:02,332 - INFO -   dilation_growth_rate: 3
+2026-06-11 21:43:02,332 - INFO -   output_emb_width: 512
+2026-06-11 21:43:02,332 - INFO -   vq_act: relu
+2026-06-11 21:43:02,332 - INFO -   block_size: 51
+2026-06-11 21:43:02,333 - INFO -   embed_dim_gpt: 1024
+2026-06-11 21:43:02,333 - INFO -   clip_dim: 512
+2026-06-11 21:43:02,333 - INFO -   num_layers: 9
+2026-06-11 21:43:02,334 - INFO -   num_local_layer: 2
+2026-06-11 21:43:02,334 - INFO -   n_head_gpt: 16
+2026-06-11 21:43:02,334 - INFO -   ff_rate: 4
+2026-06-11 21:43:02,334 - INFO -   drop_out_rate: 0.1
+2026-06-11 21:43:02,335 - INFO -   quantizer: ema_reset
+2026-06-11 21:43:02,335 - INFO -   quantbeta: 1.0
+2026-06-11 21:43:02,335 - INFO -   resume_pth: output/vq/2024-06-03-20-22-07_retrain/net_last.pth
+2026-06-11 21:43:02,335 - INFO -   resume_trans: output/t2m/2024-06-04-09-29-20_trans_name_b128/net_last.pth
+2026-06-11 21:43:02,336 - INFO -   out_dir: output
+2026-06-11 21:43:02,336 - INFO -   exp_name: exp_debug
+2026-06-11 21:43:02,336 - INFO -   vq_name: VQVAE
+2026-06-11 21:43:02,337 - INFO -   print_iter: 200
+2026-06-11 21:43:02,337 - INFO -   eval_iter: 10000
+2026-06-11 21:43:02,337 - INFO -   if_maxtest: False
+2026-06-11 21:43:02,337 - INFO -   text: None
+2026-06-11 21:43:02,338 - INFO -   length: None
+2026-06-11 21:43:02,338 - INFO -   weight_decay: 1e-05
+2026-06-11 21:43:02,338 - INFO -   decay_option: all
+2026-06-11 21:43:02,338 - INFO -   optimizer: adamw
+2026-06-11 21:43:02,339 - INFO -   motion_generation_method: from_scratch
+2026-06-11 21:43:02,339 - INFO -   seed: 42
+2026-06-11 21:43:02,339 - INFO -   batch_size: 512
+2026-06-11 21:43:02,341 - INFO -   clip_loss_type: cosine
+2026-06-11 21:43:02,342 - INFO -   clip_target: motion_t2m
+2026-06-11 21:43:02,342 - INFO -   clip_loss: True
+2026-06-11 21:43:02,342 - INFO -   test_avg: False
+2026-06-11 21:43:02,343 - INFO -   clip_weight: 0.0
+2026-06-11 21:43:02,343 - INFO -   pose_clip_weight: 0.0
+2026-06-11 21:43:02,343 - INFO -   teacher: 0.0
+2026-06-11 21:43:02,344 - INFO -   clip_temp: 0.07
+2026-06-11 21:43:02,344 - INFO -   teacher_temp: 3.0
+2026-06-11 21:43:02,360 - INFO -   eeg_ch: all
+2026-06-11 21:43:02,360 - INFO -   eeg_data_root: ['EEG_data/20260416S1', 'EEG_data/20260420S2', 'EEG_data/20260430S4', 'EEG_data/20260511S6', 'EEG_data/20260512S7', 'EEG_data/20260515S9']
+2026-06-11 21:43:02,360 - INFO -   eeg_data_name: _final.mat
+2026-06-11 21:43:02,360 - INFO -   motion_pool_size: 100
+2026-06-11 21:43:02,361 - INFO -   cls_head: True
+2026-06-11 21:43:02,361 - INFO -   val_per_epoch: 50
+2026-06-11 21:43:02,361 - INFO -   pkeep: 0.5
+2026-06-11 21:43:02,361 - INFO -   mask_prob: 0.5
+2026-06-11 21:43:02,362 - INFO -   random_level: False
+2026-06-11 21:43:02,362 - INFO -   eeg_embed_dim: 256
+2026-06-11 21:43:02,362 - INFO -   eeg_num_local_layer: 2
+2026-06-11 21:43:02,363 - INFO -   eeg_drop_out_rate: 0.1
+2026-06-11 21:43:02,363 - INFO -   eeg_ff_rate: 4
+2026-06-11 21:43:02,363 - INFO -   eeg_num_layers: 2
+2026-06-11 21:43:02,363 - INFO -   eeg_n_head: 4
+2026-06-11 21:43:02,364 - INFO -   eeg_iter: 10000
+2026-06-11 21:43:02,364 - INFO -   eeg_milestones: [8000]
+2026-06-11 21:43:02,364 - INFO -   dataset_name: t2m
+2026-06-11 21:43:02,364 - INFO -   vq_dir: ./output/vq/VQVAE
+2026-06-11 21:43:02,365 - INFO - ========================
+2026-06-11 21:54:12,795 - INFO - ==================================================
+2026-06-11 21:54:12,797 - INFO - STATISTICAL EVALUATION OVER 20 RUNS
+2026-06-11 21:54:12,797 - INFO - ==================================================
+2026-06-11 21:54:12,799 - INFO - 
+>>> Comparing Real vs SHUF
+2026-06-11 21:54:12,802 - INFO - T_R_Precision[Top-1]: Real 0.0346±0.0028 vs 0.0326±0.0025 | p=1.86e-01 
+2026-06-11 21:54:12,803 - INFO - T_R_Precision[Top-2]: Real 0.0673±0.0033 vs 0.0665±0.0042 | p=7.48e-01 
+2026-06-11 21:54:12,803 - INFO - T_R_Precision[Top-3]: Real 0.0975±0.0046 vs 0.0975±0.0051 | p=1.00e+00 
+2026-06-11 21:54:12,805 - INFO - Pose_R_Prec[Top-1]: Real 0.0344±0.0033 vs 0.0326±0.0029 | p=4.64e-01 
+2026-06-11 21:54:12,806 - INFO - Pose_R_Prec[Top-2]: Real 0.0714±0.0040 vs 0.0622±0.0039 | p=2.14e-03 **
+2026-06-11 21:54:12,807 - INFO - Pose_R_Prec[Top-3]: Real 0.1063±0.0040 vs 0.0945±0.0051 | p=3.13e-04 ***
+2026-06-11 21:54:12,808 - INFO - Pose_Match_Score: Real 9.3919±0.0487 vs 9.6754±0.0480 | p=2.49e-10 ***
+2026-06-11 21:54:12,809 - INFO - 
+>>> Comparing Real vs NOISE
+2026-06-11 21:54:12,811 - INFO - T_R_Precision[Top-1]: Real 0.0346±0.0028 vs 0.0313±0.0015 | p=3.28e-02 *
+2026-06-11 21:54:12,812 - INFO - T_R_Precision[Top-2]: Real 0.0673±0.0033 vs 0.0624±0.0023 | p=2.83e-03 **
+2026-06-11 21:54:12,812 - INFO - T_R_Precision[Top-3]: Real 0.0975±0.0046 vs 0.0947±0.0042 | p=2.33e-01 
+2026-06-11 21:54:12,814 - INFO - Pose_R_Prec[Top-1]: Real 0.0344±0.0033 vs 0.0294±0.0032 | p=4.61e-02 *
+2026-06-11 21:54:12,815 - INFO - Pose_R_Prec[Top-2]: Real 0.0714±0.0040 vs 0.0592±0.0041 | p=1.79e-04 ***
+2026-06-11 21:54:12,816 - INFO - Pose_R_Prec[Top-3]: Real 0.1063±0.0040 vs 0.0910±0.0037 | p=7.21e-06 ***
+2026-06-11 21:54:12,817 - INFO - Pose_Match_Score: Real 9.3919±0.0487 vs 9.3961±0.0389 | p=8.82e-01 
+2026-06-11 21:54:12,819 - INFO - FID            : Real 2.3237±0.1426 vs 5.5123±0.2499 | p=3.24e-14 ***
+2026-06-11 21:54:12,821 - INFO - Diversity      : Real 9.1991±0.0850 vs 8.2500±0.0727 | p=1.36e-12 ***
+2026-06-11 21:54:12,822 - INFO - Ground Truth Diversity: 9.9819±0.1539
