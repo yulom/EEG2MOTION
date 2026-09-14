@@ -1,6 +1,6 @@
 # EEG2MOTION: Towards Open-Vocabulary Human Motion Synthesis from Non-invasive Brain Signals
 
-Official implementation of **EEG2MOTION: Towards Open-Vocabulary Human Motion Synthesis from Non-invasive Brain Signals**.
+Official implementation of **EEG2MOTION: Towards Open-Vocabulary Human Motion Synthesis from Non-invasive Brain Signals**. https://arxiv.org/abs/2608.14754
 
 Please visit our Demo Page to see results: https://yulom.github.io/EEG2MOTIONdemopage/
 
