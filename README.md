@@ -171,3 +171,15 @@ This work builds upon the **MMM: Generative Masked Motion Model**. We thank the 
 Please also refer to the original MMM repository for details:
 
 https://github.com/exitudio/MMM
+
+The human motion sequences included in the EEG2MOTION dataset were sampled from the **HumanML3D dataset**. If you use the motion data, please also cite the original HumanML3D paper:
+
+@InProceedings{Guo_2022_CVPR,
+    author    = {Guo, Chuan and Zou, Shihao and Zuo, Xinxin and Wang, Sen and Ji, Wei and Li, Xingyu and Cheng, Li},
+    title     = {Generating Diverse and Natural 3D Human Motions From Text},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2022},
+    pages     = {5152-5161}
+}
+
