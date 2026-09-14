@@ -2,6 +2,8 @@
 
 Official implementation of **EEG2MOTION: Towards Open-Vocabulary Human Motion Synthesis from Non-invasive Brain Signals**.
 
+Please visit our Demo Page to see results: https://yulom.github.io/EEG2MOTIONdemopage/
+
 ## 1. Dataset Preparation
 
 Please download the **EEG2MOTION dataset** from Zenodo:
