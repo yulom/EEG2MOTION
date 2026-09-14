@@ -58,17 +58,6 @@ bash dataset/prepare/download_model.sh
 
 These commands download the GloVe embeddings, motion feature extractor, and pretrained MMM model required by EEG2MOTION.
 
-### Reference
-
-```bibtex
-@inproceedings{pinyoanuntapong2024mmm,
-  title={MMM: Generative Masked Motion Model},
-  author={Ekkasit Pinyoanuntapong and Pu Wang and Minwoo Lee and Chen Chen},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2024},
-}
-```
-
 ## 3. Environment Setup
 
 We provide the required Python environment in `environment.yml`.
@@ -172,8 +161,18 @@ Please also refer to the original MMM repository for details:
 
 https://github.com/exitudio/MMM
 
+```bibtex
+@inproceedings{pinyoanuntapong2024mmm,
+  title={MMM: Generative Masked Motion Model},
+  author={Ekkasit Pinyoanuntapong and Pu Wang and Minwoo Lee and Chen Chen},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2024},
+}
+```
+
 The human motion sequences included in the EEG2MOTION dataset were sampled from the **HumanML3D dataset**. If you use the motion data, please also cite the original HumanML3D paper:
 
+```bibtex
 @InProceedings{Guo_2022_CVPR,
     author    = {Guo, Chuan and Zou, Shihao and Zuo, Xinxin and Wang, Sen and Ji, Wei and Li, Xingyu and Cheng, Li},
     title     = {Generating Diverse and Natural 3D Human Motions From Text},
@@ -182,4 +181,5 @@ The human motion sequences included in the EEG2MOTION dataset were sampled from 
     year      = {2022},
     pages     = {5152-5161}
 }
+```
 
